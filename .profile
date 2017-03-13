@@ -20,3 +20,14 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+if test -e ${HOME}/Code/go
+then
+	export GOPATH=${HOME}/Code/go
+	export PATH="$PATH:${GOPATH}/bin"
+fi
+
+if test -e ~/Code/Python/bin/activate
+then
+	source ~/Code/Python/bin/activate
+fi

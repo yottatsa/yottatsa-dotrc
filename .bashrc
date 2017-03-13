@@ -121,8 +121,3 @@ export LC_CTYPE='en_US.UTF-8'
 export EMAIL="me@yottatsa.name"
 export DEBFULLNAME="Vladimir Eremin"
 
-source ~/Code/Python/bin/activate
-
-export GOPATH=/Users/yottatsa/Code/go
-
-export PATH="$PATH:${GOPATH}/bin"
