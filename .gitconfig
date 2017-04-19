@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	email = veremin@mirantis.com
+	name = Vladimir Eremin
+	signingkey = 56F3E83F
+[commit]
+	#gpgSign = true
