@@ -10,7 +10,8 @@ set incsearch		" Incremental search
 "set autowrite		" Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
 
-"set mouse=a		" Enable mouse usage (all modes) in terminals
+set mouse=a		" Enable mouse usage (all modes) in terminals
+set ttymouse=xterm2
 
 set fileencodings=ucs-bom,utf-8,cp1251,default,latin1
 
