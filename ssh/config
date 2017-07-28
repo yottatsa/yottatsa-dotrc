@@ -5,7 +5,6 @@ Host *
 	LogLevel=ERROR
 	PasswordAuthentication no
 	AddKeysToAgent yes
-	UseKeychain yes
-	AddressFamily inet
-
-Include mine
+        UseKeychain yes  # no Linux
+ 
+Include mine  # no Linux
