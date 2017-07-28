@@ -3,7 +3,7 @@
 	smudge = git-lfs smudge %f
 	required = true
 [user]
-	email = veremin@mirantis.com
+	email = me@yottata.name
 	name = Vladimir Eremin
 	signingkey = 56F3E83F
 [commit]
