@@ -14,20 +14,38 @@ if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
 	. "$HOME/.bashrc"
     fi
+
+    if [ -n "$PS1" ]; then
+	if [ -f ~/.bash_aliases ]; then
+	    . ~/.bash_aliases
+	fi
+    fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-if test -e ${HOME}/Code/go
+if test -e ${HOME}/.local/go
 then
-	export GOPATH=${HOME}/Code/go
+	export GOPATH=${HOME}/.local/go
 	export PATH="$PATH:${GOPATH}/bin"
 fi
 
-if test -e ~/Code/Python/bin/activate
+if test -e ~/.local/python/bin/activate
 then
-	source ~/Code/Python/bin/activate
+	source ~/.local/python/bin/activate
 fi
+
+export PAGER='/usr/bin/less'
+export SDCV_PAGER=$PAGER
+export EDITOR='/usr/bin/vim'
+export DEFAULT_CHARSET="UTF-8" # useful for enca/enconv
+export PROMPT_DIRTRIM=1
+
+export CLICOLOR=1
+export LESS="-ierX"
+#export TERM=xterm-color
+
+export LC_CTYPE='en_US.UTF-8'
+
+export EMAIL="me@yottatsa.name"
+export DEBFULLNAME="Vladimir Eremin"
