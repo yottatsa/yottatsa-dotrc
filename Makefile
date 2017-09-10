@@ -13,10 +13,8 @@ $(FILES):
 Makefile:
 	:
 
-ssh: 
-	rm ~/.ssh || :
-	mkdir -p ~/.ssh
-	grep -v $$(uname -s) ssh/config > ~/.ssh/config
+ssh-config: 
+	grep -v $$(uname -s) ssh-config | sed 's,#.*$$,,' > ~/.ssh/config
 
 	
 . .. .DS_Store: ;
