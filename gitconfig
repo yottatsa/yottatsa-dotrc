@@ -5,6 +5,6 @@
 [user]
 	email = me@yottata.name
 	name = Vladimir Eremin
-	signingkey = 56F3E83F
+	signingkey = 522BE54759BD6BFF47C8BB97DABB2E09892A9CF2
 [commit]
-	#gpgSign = true
+	gpgSign = true

@@ -1,7 +1,5 @@
 Host *
-	UserKnownHostsFile /dev/null
 	ConnectTimeout 30
-	StrictHostKeyChecking no
 	LogLevel=ERROR
 	PasswordAuthentication no
 	AddKeysToAgent yes
@@ -12,11 +10,3 @@ Host *
  
 Host *.s
 	ProxyCommand /usr/bin/nc -X 4 -x 127.0.0.1:8080 %h %p
-
-#Host client.s
-#	User ubuntu
-#	ForwardAgent yes
-#	Hostname 127.0.0.1
-#	Port 2224
-
-Include mine  # no Linux
